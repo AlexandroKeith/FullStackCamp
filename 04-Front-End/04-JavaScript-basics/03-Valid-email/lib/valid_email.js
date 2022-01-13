@@ -1,5 +1,8 @@
 const valid = (email) => {
-  // TODO: return true if the `email` string has the right pattern!
+  if (email.match(/.+@.+\.\w{2,3}/)) {
+    return true;
+  }
+  return false;
 };
 
 module.exports = valid; // Do not remove.
